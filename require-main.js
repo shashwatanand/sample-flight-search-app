@@ -12,6 +12,8 @@ requirejs.config({
 		citiesProvider : "models/cities.provider",
         
         //Views
+        homeView : "views/home.view",
+        
         //Helpers
         
         //Third-Party
