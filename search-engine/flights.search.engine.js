@@ -11,8 +11,11 @@ var engine = {
     },
     
     loadFlightsJson : function() {
-        var fs = require('fs');
-        var path = require('path');
+        var fs = require("fs");
+        var path = require("path");
+        var flightJson = JSON.parse(fs.readFileSync(path.join(__dirname + "/../" + "/model/flight.json")));
+        this.cities = flightJson.cities;
+        this.flights = flightJson.flights;
     }
 };
 
